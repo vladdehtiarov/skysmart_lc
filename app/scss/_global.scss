@@ -9,6 +9,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: $font-clor;
+    background-color: #FFF7C7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,8 +33,43 @@ p {
 }
 
 .container {
-    width: 95%;
-    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
+.main {
+    margin-top: 87px;
+
+    @include responsive(mobile) {
+        margin-top: 36px;
+    }
+}
+
+.title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+
+    @include responsive(mobile) {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+    }
+}
+
+.br_d {
+    @include responsive(mobile) {
+        display: none;
+    }
+}
+
+.br_m {
+    display: none;
+    @include responsive(mobile) {
+        display: block;
+    }
+}

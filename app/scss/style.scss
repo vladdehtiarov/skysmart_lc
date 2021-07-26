@@ -3,7 +3,10 @@
 @import "mixin";
 @import "global";
 @import "header";
+@import "firsrt-screen";
 @import "footer";
 
-
+.hide {
+  display: none;
+}
 
