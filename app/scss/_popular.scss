@@ -1,0 +1,82 @@
+/*Popular*/
+.popular {
+  width: 100%;
+  margin-top: 96px;
+
+//  Cards
+  &__cards {
+    width: 100%;
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+
+    // Card title
+    &-title {
+      width: 500px;
+      margin-top: 16px;
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: -0.6px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+
+      // White text
+      &_white {
+        display: block;
+        color: rgba(255, 255, 255, 0.8)
+      }
+    }
+
+    //  Green card
+    &-card_green {
+      width: 559px;
+      height: 408px;
+      padding: 16px;
+      background: #7AC100;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    // Green card filter
+    &-filter-block {
+      width: 387px;
+      display: flex;
+      justify-content: space-between;
+
+      // Filter items
+      &_i {
+        padding: 4px 10px;
+        font-size: 18px;
+        line-height: 24px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #7AC100;
+        background: rgba(255, 255, 255, 0.64);
+        border-radius: 8px;
+      }
+    }
+
+    // Green card price
+    &-price {
+      margin-top: 83px;
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: -0.6px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    // Green card number of lessons
+    &-numb-less {
+      font-size: 18px;
+      line-height: 24px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    //  Green card image
+    &-img {
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+    }
+  }
+}

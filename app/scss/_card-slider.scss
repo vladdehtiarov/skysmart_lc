@@ -1,0 +1,31 @@
+.cards-slider {
+  width: 828px;
+  margin: 0 auto;
+  position: relative;
+
+  &__slide {
+    .course-card {
+      margin: 0 auto;
+    }
+  }
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  cursor: pointer;
+
+  &-prew {
+    left: -24px;
+  }
+
+  &-next {
+    right: -24px;
+  }
+}
+
+.slick-disabled path {
+  fill: rgba(#000, 0.24);
+}

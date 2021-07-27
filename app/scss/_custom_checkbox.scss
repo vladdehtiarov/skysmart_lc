@@ -1,0 +1,54 @@
+/*Custom checkbox*/
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  //  Input
+  &__input {
+    display: none;
+  }
+
+  // Fake elem
+  &__fake {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 13px;
+    border: 2px solid rgba(4, 18, 27, 0.24);
+    border-radius: 4px;
+    position: relative;
+    background-color: transparent;
+
+
+    &::before {
+      content: url("../images/check.png");
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  &__input:checked +  &__fake {
+    background-color: #00AEFA;
+    border-color: transparent;
+  }
+  
+  &__input:checked + &__fake::before {
+    opacity: 1;
+  }
+
+  // Text
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.05px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #04121B;
+  }
+
+
+}

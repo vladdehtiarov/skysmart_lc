@@ -1,0 +1,112 @@
+/*Cure cards*/
+.course-card {
+  display: block;
+  width: 260px;
+  height: 408px;
+  padding: 16px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  position: relative;
+
+  //  Filter
+  &__filter {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  //  course name
+  &__course-name {
+    margin-top: -5px;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -0.2px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000;
+  }
+
+  // course info
+  &__course-info {
+    display: flex;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  // Student age
+  &__age,
+  &__grade {
+    margin-right: 8px;
+  }
+
+  // course price and status
+  &__price-and-status {
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // course price
+  &__curse-price {
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  //  course status
+  &__curse-status {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    // If course already
+    &_already {
+      color: #FF4545;
+    }
+
+    // If course will start soon
+    &_soon {
+      color: #00C1FF;
+    }
+  }
+}
+
+// Last card
+.last-card {
+  background: #E4FBFF;
+  position: relative;
+  overflow: hidden;
+
+  // Title
+  &__title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.15px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #091E2A;
+  }
+
+  // Image
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

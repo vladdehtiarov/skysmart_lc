@@ -1,0 +1,31 @@
+/*Custom radiobutton*/
+
+.custom-radiobutton {
+
+  // Radiobutton
+  &__input {
+    display: none;
+  }
+
+  // Fake input
+  &__fake {
+    display: inline-block;
+    padding: 12px 16px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.05px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  &__input:checked + &__fake {
+    background: #CAFAFF;
+    border: 2px solid #009EE4;
+    color: #009EE4;
+  }
+}

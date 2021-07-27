@@ -1,0 +1,126 @@
+
+
+/*Curses*/
+.curses {
+  width: 100%;
+  margin-top: 96px;
+
+  //  Title
+  &__title {
+    width: 80%;
+  }
+
+  //  Filters
+  &__filters {
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    // Left filters
+    &-left {
+      width: 164px;
+    }
+
+    // right filters
+    &-right {
+      width: 892px;
+    }
+  }
+
+  //  Filter age
+  &__filters-age {
+
+    // Title
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(4, 18, 27, 0.48);
+    }
+
+    // Checkboxes
+    .custom-checkbox {
+      margin-top: 10px;
+    }
+  }
+
+  //  Filter age
+  &__filters-format {
+    margin-top: 33px;
+
+    // Title
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(4, 18, 27, 0.48);
+    }
+
+    //  Form
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // Filter for type
+  &__filters-type {
+    width: auto;
+    margin-left: 51px;
+    margin-top: -13px;
+
+
+
+    //  Form
+    &__form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .custom-radiobutton__fake {
+      margin-right: 12px;
+      margin-top: 12px;
+    }
+  }
+}
+
+// Curses group
+
+.curses-groups {
+  width: 100%;
+  margin-top: 68px;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-top: 62px;
+  }
+
+
+  // Group
+  &__group {
+    margin-top: 64px;
+  }
+
+  // Title
+  &__group-title {
+    margin-left: 42px;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #091E2A;
+  }
+
+  //  Cards
+  &__group-cards {
+    width: 100%;
+    margin-top: 28px;
+  }
+}
