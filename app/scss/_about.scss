@@ -1,0 +1,101 @@
+/*About*/
+.about {
+  width: 100%;
+  margin-top: 99px;
+  padding-top: 104px;
+  background: #E4FBFF;
+  position: relative;
+  overflow: hidden;
+
+  // Image
+  &__image{
+    height: 508px;
+    position: absolute;
+    left: 480px;
+    bottom: 5px;
+  }
+
+  &__image-title {
+    width: 484px;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    position: absolute;
+    left: 535px;
+    top: 468px;
+  }
+
+  &__image-text {
+    width: 400px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.1px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    position: absolute;
+    left: 535px;
+    top: 623px;
+
+    p:last-child {
+      margin-top: 12px;
+      width: 340px;
+    }
+  }
+
+  // Title
+  &__title {
+    letter-spacing: -1.1px;
+
+    &-blue {
+      color: #00AEFA;
+    }
+  }
+
+  // Info
+  &__info {
+    width: 360px;
+    height: 512px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //  Item
+    &-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      // Img
+      &-img {
+        margin-right: 16px;
+      }
+
+      // Text
+      &-text {
+        width: 280px;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+      }
+    }
+
+    // Button
+    &-btn {
+      display: inline-block;
+      padding: 13px 87px;
+      background: #00AEFA;
+      border-radius: 10px;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: -0.1px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+
+    }
+  }
+}
