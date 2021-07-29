@@ -1,4 +1,30 @@
 /*Custom radiobutton*/
+.custom-radiobutton {
+  @include responsive(mobile) {
+    &:nth-child(1) {
+      order: 0;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+    &:nth-child(4) {
+      order: 5;
+    }
+    &:nth-child(5) {
+      order: 4;
+    }
+    &:nth-child(6) {
+      order: 3;
+    }
+    &:nth-child(7) {
+      order: 6;
+    }
+
+  }
+}
 
 .custom-radiobutton {
 
@@ -10,7 +36,7 @@
   // Fake input
   &__fake {
     display: inline-block;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background: #fff;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -21,6 +47,12 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
     cursor: pointer;
+
+    @include responsive(mobile) {
+      padding: 6px 12px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__input:checked + &__fake {

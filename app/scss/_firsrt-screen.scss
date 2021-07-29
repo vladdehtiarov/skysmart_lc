@@ -7,7 +7,8 @@
   position: relative;
 
   @include responsive(mobile) {
-
+    height: 614px;
+    overflow: hidden;
   }
 
 //  Text and gif
@@ -83,6 +84,7 @@
     @include responsive(mobile) {
       width: 343px;
       height: 193px;
+      margin: 0 auto;
       margin-top: 35px;
     }
 
@@ -93,12 +95,13 @@
       object-fit: cover;
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 55%;
       transform: translate(-50%, -50%);
 
       @include responsive(mobile) {
         width: 343px;
         height: 193px;
+        left: 50%;
       }
     }
   }
@@ -115,7 +118,7 @@
 
   @include responsive(mobile) {
     width: 142%;
-    bottom: 244px;
+    bottom: 43px;
     left: -158px;
     transform: scale(-1, 1);
   }

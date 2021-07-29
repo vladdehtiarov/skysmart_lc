@@ -8,6 +8,17 @@
   border-radius: 12px;
   position: relative;
 
+  @include responsive(mobile) {
+    width: 260px;
+    height: 408px;
+  }
+
+
+  // Image
+  &__image {
+    width: 100%;
+  }
+
   //  Filter
   &__filter {
     display: inline-block;
@@ -28,6 +39,10 @@
     letter-spacing: -0.2px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000;
+
+    @include responsive(mobile) {
+      margin-top: 2px;
+    }
   }
 
   // course info
@@ -55,6 +70,12 @@
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include responsive(mobile) {
+      width: 228px;
+      left: 12px;
+      transform: translateY(0);
+    }
   }
 
   // course price

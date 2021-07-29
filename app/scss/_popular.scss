@@ -3,12 +3,47 @@
   width: 100%;
   margin-top: 96px;
 
+  @include responsive(mobile) {
+    margin-top: 48px;
+  }
+
+  .course-card {
+    @include responsive(mobile) {
+      width: 334px;
+      height: 440px;
+      margin-top: 16px;
+      border-radius: 12px;
+    }
+
+    &__course-name {
+      @include responsive(mobile) {
+        margin-top: 11px;
+      }
+    }
+
+    //&__course-info {
+    //  @include responsive(mobile) {
+    //    position: absolute;
+    //    bottom: 92px;
+    //    left: 11px;
+    //  }
+    //}
+  }
+
 //  Cards
   &__cards {
+    max-width: 1160px;
     width: 100%;
+    margin: 0 auto;
     margin-top: 49px;
     display: flex;
     justify-content: space-between;
+
+    @include responsive(mobile) {
+      margin-top: 25px;
+      flex-direction: column;
+      align-items: center;
+    }
 
     // Card title
     &-title {
@@ -18,6 +53,14 @@
       line-height: 44px;
       letter-spacing: -0.6px;
       font-feature-settings: 'pnum' on, 'lnum' on;
+
+      @include responsive(mobile) {
+        width: 307px;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+      }
 
       // White text
       &_white {
@@ -34,6 +77,12 @@
       background: #7AC100;
       border-radius: 12px;
       position: relative;
+
+      @include responsive(mobile) {
+        width: 343px;
+        height: 438px;
+        background: #BCEC30;
+      }
     }
 
     // Green card filter
@@ -41,6 +90,11 @@
       width: 387px;
       display: flex;
       justify-content: space-between;
+
+      @include responsive(mobile) {
+        width: 216px;
+        flex-wrap: wrap;
+      }
 
       // Filter items
       &_i {
@@ -51,6 +105,20 @@
         color: #7AC100;
         background: rgba(255, 255, 255, 0.64);
         border-radius: 8px;
+
+        @include responsive(mobile) {
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0.1px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: #7AC100;
+        }
+
+        &:last-child {
+          @include responsive(mobile) {
+            margin-top: 8px;
+          }
+        }
       }
     }
 
@@ -62,6 +130,19 @@
       letter-spacing: -0.6px;
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: rgba(255, 255, 255, 0.8);
+
+      @include responsive(mobile) {
+        display: inline-block;
+        margin-top: 122px;
+        padding: 4px 10px;
+        background: rgba(255, 255, 255, 0.64);
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #7AC100;
+      }
     }
 
     // Green card number of lessons
@@ -70,6 +151,10 @@
       line-height: 24px;
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: rgba(255, 255, 255, 0.8);
+
+      @include responsive(mobile) {
+        display: none;
+      }
     }
 
     //  Green card image

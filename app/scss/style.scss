@@ -20,3 +20,8 @@
   display: none;
 }
 
+.hide_m {
+  @include responsive(mobile) {
+    display: none;
+  }
+}

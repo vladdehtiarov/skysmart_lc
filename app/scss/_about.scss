@@ -7,12 +7,24 @@
   position: relative;
   overflow: hidden;
 
+  @include responsive(mobile) {
+    margin-top: 50px;
+    padding-top: 56px;
+    height: 1068px;
+  }
+
   // Image
   &__image{
     height: 508px;
     position: absolute;
-    left: 480px;
+    left: 42%;
     bottom: 5px;
+
+    @include responsive(mobile) {
+      height: 232px;
+      left: 16px;
+      bottom: 0;
+    }
   }
 
   &__image-title {
@@ -23,8 +35,19 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
     position: absolute;
-    left: 535px;
+    left: 46%;
     top: 468px;
+
+    @include responsive(mobile) {
+      width: 100%;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.25px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #000000;
+      left: 16px;
+      top: 746px;
+    }
   }
 
   &__image-text {
@@ -35,18 +58,34 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
     position: absolute;
-    left: 535px;
+    left: 46%;
     top: 623px;
+
+    @include responsive(mobile) {
+      width: 178px;
+      font-size: 14px;
+      line-height: 20px;
+      left: 38px;
+      top: 863px;
+    }
 
     p:last-child {
       margin-top: 12px;
       width: 340px;
+
+      @include responsive(mobile) {
+        margin-top: 17px;
+        width: 178px;
+      }
     }
   }
 
   // Title
   &__title {
     letter-spacing: -1.1px;
+    @include responsive(mobile) {
+      width: 100%;
+    }
 
     &-blue {
       color: #00AEFA;
@@ -62,6 +101,12 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include responsive(mobile) {
+      width: 343px;
+      height: 384px;
+      margin-top: 42px;
+    }
+
     //  Item
     &-item {
       display: flex;
@@ -71,6 +116,11 @@
       // Img
       &-img {
         margin-right: 16px;
+
+        @include responsive(mobile) {
+          width: 52px;
+          margin-right: 12px;
+        }
       }
 
       // Text
@@ -80,6 +130,12 @@
         line-height: 32px;
         letter-spacing: -0.1px;
         font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(mobile) {
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: -0.05px;
+        }
       }
     }
 
@@ -96,6 +152,12 @@
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #FFFFFF;
 
+      @include responsive(mobile) {
+        padding: 15px 102px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.05px;
+      }
     }
   }
 }

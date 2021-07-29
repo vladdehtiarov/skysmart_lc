@@ -61,6 +61,17 @@
 
       @include responsive(mobile) {
         display: block;
+        width: 18px;
+        height: 14px;
+        background-image: url('../images/burger-menu.svg');
+      }
+    }
+
+    .burger.close-burger {
+      @include responsive(mobile) {
+        width: 14px;
+        height: 14px;
+        background-image: url('../images/close.svg');
       }
     }
 

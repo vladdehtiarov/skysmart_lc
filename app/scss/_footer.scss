@@ -3,13 +3,33 @@
   margin-top: 188px;
   height: 180px;
 
+  @include responsive(mobile) {
+    margin-top: 60px;
+    height: 358px;
+  }
+
+  &-logo {
+    @include responsive(mobile) {
+      width: 43%;
+    }
+  }
+
   &__inner {
     display: flex;
     justify-content: flex-start;
 
+    @include responsive(mobile) {
+      flex-direction: column;
+    }
+
     &-left {
       margin-right: 80px;
       margin-left: 14px;
+
+      @include responsive(mobile) {
+        margin-right: 0;
+        margin-left: 0;
+      }
 
       .text-block {
         margin-top: 20px;
@@ -19,6 +39,9 @@
         font-size: 16px;
         line-height: 16px;
         color: rgba(#04121B, 0.4);
+        @include responsive(mobile) {
+          display: none;
+        }
 
         &:last-child {
           margin-top: 16px;
@@ -29,6 +52,11 @@
 
     &-right {
       margin-top: -11px;
+
+      @include responsive(mobile) {
+        margin-top: 78px;
+      }
+
       .text-block {
         margin-top: 20px;
         display: flex;
@@ -37,6 +65,21 @@
         line-height: 20px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: rgba(4, 18, 27, 0.64);
+
+        @include responsive(mobile) {
+          width: 90%;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      .text-block:last-child {
+        display: none;
+
+        @include responsive(mobile) {
+          display: block;
+          margin-top: 48px;
+        }
       }
     }
   }

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skysmar</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__inner-left">
-                    <img class="burger" src="images/burger-menu.svg" alt="#">
+                    <div class="burger"></div>
                     <a class="header-logo" href="#"><img src="images/logo.svg" alt="skysmart"></a>
                     <a class="go-vebinars" href="#">Вебинары и видеоуроки </a>
                 </div>
@@ -96,9 +96,9 @@
             <div class="container">
                 <!--      Title          -->
                 <h1 class="popular__title title">
-                    Посмотри, что сейчас популярно
+                    Посмотри,<br class="br_m"> что сейчас популярно
                 </h1>
-
+            </div>
                 <!--     Popular cards       -->
                 <div class="popular__cards">
                     <!--        Green card        -->
@@ -187,7 +187,7 @@
 
                 </div>
                 <!--     Popular cards end       -->
-            </div>
+
         </section>
         <!--   Section popular end    -->
 
@@ -196,13 +196,18 @@
             <div class="container">
                 <!--      Title          -->
                 <h1 class="curses__title title">
-                    Выбери курс и смотри уроки онлайн или в записи
+                    Выбери курс<br class="br_m"> и смотри уроки<br class="br_m"> онлайн или в записи
                 </h1>
 
                 <!--        Curses filters        -->
                 <div class="curses__filters">
                     <!--        Curses filters left       -->
-                    <div class="curses__filters-left">
+                    <div class="curses__filters-left hide_m">
+                        <a class="back-age-filter" href="#">
+                            <img src="images/back.svg" alt="#">
+                            Назад
+                        </a>
+
                         <!--             Age filter           -->
                         <div class="curses__filters-age">
                             <div class="curses__filters-age__title">Возраст</div>
@@ -257,42 +262,51 @@
                             </form>
                         </div>
 
+                        <a class="show-courses" href="#">Показать курсы</a>
+
                     </div>
                     <!--        Curses filters right       -->
                     <div class="curses__filters-right">
                         <!--            Filter for type            -->
-                        <div class="curses__filters-type">
-                            <form class="curses__filters-type__form">
-                                <label class="custom-radiobutton">
-                                    <input checked class="custom-radiobutton__input" type="radio" name="filter-for-type" value="all">
-                                    <span class="custom-radiobutton__fake">Все направления</span>
-                                </label>
-                                <label class="custom-radiobutton">
-                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="school">
-                                    <span class="custom-radiobutton__fake">Школа</span>
-                                </label>
-                                <label class="custom-radiobutton">
-                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="preschool">
-                                    <span class="custom-radiobutton__fake">Дошколка</span>
-                                </label>
-                                <label class="custom-radiobutton">
-                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="exams">
-                                    <span class="custom-radiobutton__fake">Экзамены</span>
-                                </label>
-                                <label class="custom-radiobutton">
-                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="programming">
-                                    <span class="custom-radiobutton__fake">Программирование</span>
-                                </label>
-                                <label class="custom-radiobutton">
-                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="hobbies">
-                                    <span class="custom-radiobutton__fake">Хобби и творчество</span>
-                                </label>
-                                <label class="custom-radiobutton">
-                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="qualities">
-                                    <span class="custom-radiobutton__fake">Личные качества</span>
-                                </label>
-                            </form>
-                        </div>
+
+                            <div class="curses__filters-type">
+                                <form class="curses__filters-type__form">
+                                    <label class="custom-radiobutton">
+                                        <input checked class="custom-radiobutton__input" type="radio" name="filter-for-type" value="all">
+                                        <span class="custom-radiobutton__fake">Все направления</span>
+                                    </label>
+                                    <label class="custom-radiobutton">
+                                        <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="school">
+                                        <span class="custom-radiobutton__fake">Школа</span>
+                                    </label>
+                                    <label class="custom-radiobutton">
+                                        <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="preschool">
+                                        <span class="custom-radiobutton__fake">Дошколка</span>
+                                    </label>
+                                    <label class="custom-radiobutton">
+                                        <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="exams">
+                                        <span class="custom-radiobutton__fake">Экзамены</span>
+                                    </label>
+                                    <label class="custom-radiobutton">
+                                        <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="programming">
+                                        <span class="custom-radiobutton__fake">Программирование</span>
+                                    </label>
+                                    <label class="custom-radiobutton">
+                                        <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="hobbies">
+                                        <span class="custom-radiobutton__fake">Хобби и творчество</span>
+                                    </label>
+                                    <label class="custom-radiobutton">
+                                        <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="qualities">
+                                        <span class="custom-radiobutton__fake">Личные качества</span>
+                                    </label>
+                                </form>
+                            </div>
+
+                            <button class="any-years-btn">
+                                Любой возраст
+                                <img src="images/any-years.svg" alt="#">
+                            </button>
+
 
                         <!--          Curses group   School           -->
                         <div class="curses-groups">
@@ -1224,7 +1238,7 @@
                 <h1 class="about__title title">
                     Пробуй разное.
                     <span class="about__title-blue">
-                        Подтягивай оценки<br class="br_d">в школе, прокачивай личные качества, рисуй и программируй
+                        Подтягивай<br class="br_m"> оценки<br class="br_d"> в школе, прокачивай личные качества, рисуй<br class="br_m"> и программируй
                     </span>
                 </h1>
                 
@@ -1243,12 +1257,12 @@
                     <!--        Item 3      -->
                     <div class="about__info-item">
                         <img class="about__info-item-img" src="images/folder.png" alt="#">
-                        <p class="about__info-item-text">Пройди конкретный курс или всю программу поэтапно</p>
+                        <p class="about__info-item-text">Пройди конкретный<br class="br_m"> курс или всю программу поэтапно</p>
                     </div>
                     <!--        Item 4      -->
                     <div class="about__info-item">
                         <img class="about__info-item-img" src="images/power.png" alt="#">
-                        <p class="about__info-item-text">Выбирай и изучай только то, что тебе интересно</p>
+                        <p class="about__info-item-text">Выбирай и изучай только<br class="br_m"> то, что тебе интересно</p>
                     </div>
                     <a href="#" class="about__info-btn">Узнать больше →</a>
                 </div>
@@ -1274,7 +1288,7 @@
                 <h1 class="comments__title title">
                     Родители ценят качество обучения,
                     <span class="comments__title-blue">
-                        а ученики получают удовольствие от занятий
+                        <br class="br_m">а ученики получают удовольствие<br class="br_m"> от занятий
                     </span>
                 </h1>
             </div>
@@ -1350,8 +1364,8 @@
                         <span class="phone">
                             8 800 333-23-42 для России
                         </span>
-
                     </div>
+                    <div class="text-block">© Skysmart, 2021</div>
                 </div>
             </div>
         </div>
@@ -1372,8 +1386,31 @@
             nextArrow: `
                 <svg class="control control-next" width="14" height="23" viewBox="0 0 14 23" fill="gray" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666262 19.6893C0.080475 20.2751 0.0804749 21.2249 0.666262 21.8107C1.25205 22.3964 2.2018 22.3964 2.78758 21.8107L12.3876 12.2107L13.4482 11.15L12.3876 10.0893L2.78758 0.489339C2.2018 -0.096448 1.25205 -0.0964481 0.666264 0.489339C0.0804767 1.07512 0.0804766 2.02487 0.666263 2.61066L9.2056 11.15L0.666262 19.6893Z" fill="black"/>
-                </svg>`,
+                </svg>
+                `,
+            responsive: [
+                {
+                    breakpoint: 1080,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        slidesToShow: 3
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '24px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
+
+
     </script>
     <script src="js/main.min.js"></script>
 

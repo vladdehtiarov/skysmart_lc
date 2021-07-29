@@ -3,9 +3,17 @@
   margin: 0 auto;
   position: relative;
 
+  @include responsive(mobile) {
+    width: 100%;
+  }
+
   &__slide {
     .course-card {
       margin: 0 auto;
+
+      @include responsive(mobile) {
+        margin: 0;
+      }
     }
   }
 }
@@ -28,4 +36,11 @@
 
 .slick-disabled path {
   fill: rgba(#000, 0.24);
+}
+
+.slick-slide {
+
+  @include responsive(mobile) {
+    width: 276px!important;
+  }
 }
