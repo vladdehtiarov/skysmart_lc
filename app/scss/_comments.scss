@@ -24,15 +24,18 @@
 
 // Comments wrapper
 .comments-wrapper {
-  width: 1160px;
+  width: 100%;
+  max-width: 1160px;
   margin: 0 auto;
   margin-top: 64px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
+
   @include responsive(mobile) {
     width: 100%;
+    max-width: 100%;
     overflow-y: scroll;
     margin-top: 37px;
 
@@ -49,6 +52,7 @@
   padding: 14px 9px 32px 24px;
   border-radius: 18px;
   background: #fff;
+
 
   @include responsive(mobile) {
     width: 280px;

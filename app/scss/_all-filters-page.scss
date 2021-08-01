@@ -1,0 +1,31 @@
+@import "all-cards";
+@import "filers-age-all";
+
+.all-filters-page {
+  .main {
+    @include responsive(mobile) {
+      margin-top: 0;
+    }
+  }
+
+  .curses {
+    @include responsive(mobile) {
+      margin-top: 33px;
+    }
+
+    &__filters {
+      @include responsive(mobile) {
+        margin-top: 0;
+      }
+    }
+
+    &__filters-right {
+      @include responsive(mobile) {
+        margin-top: 25px;
+      }
+    }
+
+
+  }
+
+}

@@ -8,8 +8,9 @@
   }
 
   @include responsive(mobile) {
-    width: 100%;
+    width: 1724px;
     margin-left: 20px;
+    padding-right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

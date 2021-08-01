@@ -1,0 +1,46 @@
+.filers-age-all {
+  // All age btn
+  .all-age {
+    margin-top: 10px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.05px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    text-align: left;
+    color: #1797CC;
+    cursor: pointer;
+  }
+
+}
+
+//  left all filters
+.left-all-filters {
+  width: 200px;
+
+  @include responsive(mobile) {
+    width: 100%;
+  }
+}
+
+// curses filters lessons
+.curses__filters-lessons {
+  margin-top: 32px;
+
+  //  Title
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.05px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(4, 18, 27, 0.48);
+  }
+
+  .custom-checkbox {
+    margin-top: 10px;
+  }
+
+}

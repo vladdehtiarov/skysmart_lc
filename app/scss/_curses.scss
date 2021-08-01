@@ -45,6 +45,7 @@
         height: 100vh;
         padding: 0 16px;
         padding-top: 60px;
+        padding-bottom: 25px;
         position: fixed;
         top: 0;
         left: 0;
@@ -52,6 +53,7 @@
         background-color: #FFF7C7;
         transform: translateX(-100%);
         transition: all 0.2s ease-in-out;
+        overflow-y: scroll;
       }
     }
 
@@ -85,6 +87,8 @@
     .custom-checkbox {
       margin-top: 10px;
     }
+
+
   }
 
   //  Filter age

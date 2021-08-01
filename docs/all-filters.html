@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skysmar</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="all-filters-page">
+
+<!--Main-->
+    <main class="main">
+
+        <!--   Section curses    -->
+        <section class="curses">
+            <div class="container">
+                <!--        Curses filters        -->
+                <div class="curses__filters">
+                    <h1 class="curses__filters-title">
+                        Выбери курс<br class="br_m"> и смотри уроки онлайн или в записи
+                    </h1>
+                    <!--        Curses filters left       -->
+                    <div class="curses__filters-left left-all-filters">
+                        <a class="back-age-filter" href="#">
+                            <img src="images/back.svg" alt="#">
+                            Назад
+                        </a>
+
+<!--         This filters active only when study format its school               -->
+                        <!--             Age filter           -->
+                        <div class="curses__filters-age filers-age-all">
+                            <div class="curses__filters-age__title">Возраст</div>
+                            <form class="curses__filters-age__form filers-age-all__list">
+                                <label class="custom-checkbox">
+                                    <input checked class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="any">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Любой</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="1">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">1 класс</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="2">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">2 класс</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="3">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">3 класс</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="4">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">4 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="5">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">5 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="6">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">6 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="7">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">7 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="8">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">8 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="9">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">9 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="10">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">10 класс</span>
+                                </label>
+                                <label class="custom-checkbox ch-h hide">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-age" value="11">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">11 класс</span>
+                                </label>
+                            </form>
+                            <button class="all-age">Показать все</button>
+                        </div>
+                        <!--             lessons filter           -->
+                        <div class="curses__filters-lessons">
+                            <div class="curses__filters-lessons__title">Предметы</div>
+                            <form class="curses__filters-lessons__form">
+                                <label class="custom-checkbox">
+                                    <input checked class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="any">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Все</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="russian">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Русский язык</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="english">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Английский язык</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="physics">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Физика</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="mathematics">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Mathematics</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="algebra">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Алгебра</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="geometry">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Геометрия</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="social">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Обществознание</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="literature">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Литература</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="biology">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Биология</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="geography">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">География</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="chemistry">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Химия</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="history">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">История</span>
+                                </label>
+                            </form>
+                        </div>
+<!-------------------------------------------------------------------------------->
+<!--         This filters active only when study format its exams               -->
+                        <!--             Exams filter           -->
+                        <div class="curses__filters-exams hide">
+                            <div class="curses__filters-age__title">Экзамены</div>
+                            <form class="curses__filters-exams__form">
+                                <label class="custom-checkbox">
+                                    <input checked class="custom-checkbox__input" type="checkbox" name="filter-for-exams" value="any">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Все</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-exams" value="oge">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">ОГЭ</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-exams" value="ege">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">ЕГЭ</span>
+                                </label>
+                            </form>
+                        </div>
+                        <!--             lessons filter           -->
+                        <div class="curses__filters-lessons hide">
+                            <div class="curses__filters-lessons__title">Предметы</div>
+                            <form class="curses__filters-lessons__form">
+                                <label class="custom-checkbox">
+                                    <input checked class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="any">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Все</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="russian">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Русский язык</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="literature">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Литература</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="mathematics">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Mathematics</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="physics">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Физика</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="chemistry">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Химия</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="history">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">История</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input class="custom-checkbox__input" type="checkbox" name="filter-for-lessons" value="social">
+                                    <span class="custom-checkbox__fake"></span>
+                                    <span class="custom-checkbox__text">Обществознание</span>
+                                </label>
+                            </form>
+                        </div>
+<!------------------------------------------------------------------------------->
+
+                        <!--          Format filter              -->
+                        <div class="curses__filters-format">
+                            <div class="curses__filters-format__title">Формат обучения</div>
+                            <form class="curses__filters-format__form">
+                                <label class="switch">
+                                    <input checked type="checkbox" name="filter-for-format" value="webinars">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Вебинары</span>
+                                </label>
+                                <label class="switch">
+                                    <input checked type="checkbox" name="filter-for-format" value="video-courses">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Видеокурсы</span>
+                                </label>
+                                <label class="switch">
+                                    <input checked type="checkbox" name="filter-for-format" value="mini-groups">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Мини-группы</span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <a class="show-courses" href="#">Показать курсы</a>
+
+                    </div>
+                    <!--        Curses filters right       -->
+                    <div class="curses__filters-right">
+                        <!--            Filter for type            -->
+                        <div class="curses__filters-type">
+                            <form class="curses__filters-type__form">
+                                <label class="custom-radiobutton">
+                                    <input checked class="custom-radiobutton__input" type="radio" name="filter-for-type" value="all">
+                                    <span class="custom-radiobutton__fake">Все направления</span>
+                                </label>
+                                <label class="custom-radiobutton">
+                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="school">
+                                    <span class="custom-radiobutton__fake">Школа</span>
+                                </label>
+                                <label class="custom-radiobutton">
+                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="preschool">
+                                    <span class="custom-radiobutton__fake">Дошколка</span>
+                                </label>
+                                <label class="custom-radiobutton">
+                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="exams">
+                                    <span class="custom-radiobutton__fake">Экзамены</span>
+                                </label>
+                                <label class="custom-radiobutton">
+                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="programming">
+                                    <span class="custom-radiobutton__fake">Программирование</span>
+                                </label>
+                                <label class="custom-radiobutton">
+                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="hobbies">
+                                    <span class="custom-radiobutton__fake">Хобби и творчество</span>
+                                </label>
+                                <label class="custom-radiobutton">
+                                    <input class="custom-radiobutton__input" type="radio" name="filter-for-type" value="qualities">
+                                    <span class="custom-radiobutton__fake">Личные качества</span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <button class="any-years-btn">
+                            Любой возраст
+                            <img src="images/any-years.svg" alt="#">
+                        </button>
+
+                        <!--          Curses group   School           -->
+                        <div class="curses-groups all-cards">
+                            <div class="curses-groups__group">
+                                <div class="curses-groups__group-title">
+                                    Школа
+                                    <img class="all-cards__title-img" src="images/bg.png" alt="#">
+                                </div>
+                                <div class="curses-groups__all-cards">
+                                    <!--        Card 1        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 2        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 3        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 4        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 5        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 6        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 7        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 8        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+                                    <!--        Card 9        -->
+                                    <a href="#" class="course-card">
+                                        <!--            course filter            -->
+                                        <div class="course-card__filter">Русский язык</div>
+                                        <!--            course image            -->
+                                        <img class="course-card__image" src="images/curs-img-3.png" alt="#">
+                                        <!--            course name            -->
+                                        <div class="course-card__course-name">Модуль 3. Морфемика и орфография</div>
+                                        <!--            course age or grade of students            -->
+                                        <div class="course-card__course-info">
+                                            <!--            course age of students           -->
+                                            <!--<div class="course-card__age">5–7 лет</div>-->
+                                            <!--            course grade of students           -->
+                                            <div class="course-card__grade">7 класс</div>
+                                            <!--            course number of lessons           -->
+                                            <div class="course-card__numb-less">20 уроков</div>
+                                        </div>
+                                        <!--            course price and status           -->
+                                        <div class="course-card__price-and-status">
+                                            <!--            course price           -->
+                                            <div class="course-card__curse-price">2 149 ₽</div>
+                                            <!--            course status           -->
+                                            <div class="course-card__curse-status course-card__curse-status_soon">с 18 июля</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   Section curses end   -->
+
+    </main>
+<!--Main end-->
+
+
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

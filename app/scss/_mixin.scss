@@ -16,11 +16,11 @@
 
 @mixin responsive($range) {
   @if $range == desktop {
-    @media (min-width: 769px) {
+    @media (min-width: 1081px) {
       @content;
     }
   } @else if $range == mobile {
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
       @content;
     }
   }  @else if $range {
