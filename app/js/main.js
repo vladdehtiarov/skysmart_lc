@@ -3,7 +3,7 @@ const burgerImg = document.querySelector('.burger');
 const menuMob = document.querySelector('.header__menu-mob');
 
 burgerImg.addEventListener('click', function() {
-    menuMob.classList.toggle('hide');
+    menuMob.classList.toggle('show');
     this.classList.toggle('close-burger');
 });
 
@@ -15,22 +15,22 @@ const backAgeFilter = document.querySelector('.back-age-filter');
 const showCourses = document.querySelector('.show-courses');
 
 
-showElement(cursesFiltersLeft, anyYearsBtn, 'hide_m');
+showElement(cursesFiltersLeft, anyYearsBtn, 'show');
 
-hideElement(cursesFiltersLeft, backAgeFilter, 'hide_m');
-hideElement(cursesFiltersLeft, showCourses, 'hide_m');
+hideElement(cursesFiltersLeft, backAgeFilter, 'show');
+hideElement(cursesFiltersLeft, showCourses, 'show');
 
 function showElement(element, btn, selector) {
     btn.addEventListener('click', e => {
         e.preventDefault();
-        element.classList.remove(selector);
+        element.classList.add(selector);
     });
 }
 
 function hideElement(element, btn, selector) {
     btn.addEventListener('click', e => {
         e.preventDefault();
-        element.classList.add(selector);
+        element.classList.remove(selector);
     });
 }
 

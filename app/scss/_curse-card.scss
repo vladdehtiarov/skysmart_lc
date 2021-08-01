@@ -7,6 +7,14 @@
   background: #FFFFFF;
   border-radius: 12px;
   position: relative;
+  transition: all 0.2s ease-in-out;
+
+  @include responsive(desktop) {
+    &:hover {
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+      transition: all 0.2s ease-in-out;
+    }
+  }
 
   @include responsive(mobile) {
     width: 260px;

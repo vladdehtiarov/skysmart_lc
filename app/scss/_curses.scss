@@ -50,6 +50,8 @@
         left: 0;
         z-index: 1500;
         background-color: #FFF7C7;
+        transform: translateX(-100%);
+        transition: all 0.2s ease-in-out;
       }
     }
 
@@ -205,9 +207,11 @@
       margin-top: 15px;
       margin-left: -20px;
       overflow-x: scroll;
+
       &::-webkit-scrollbar {
         width: 0;
       }
+
     }
   }
 }
