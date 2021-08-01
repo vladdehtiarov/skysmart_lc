@@ -4,11 +4,14 @@
   height: 814px;
   padding-top: 48px;
   background: linear-gradient(180deg, rgba(255, 247, 199, 0) 0%, #D7F9FF 60.82%);
-  position: relative;
 
   @include responsive(mobile) {
     height: 614px;
     overflow: hidden;
+  }
+
+  .container {
+    position: relative;
   }
 
 //  Text and gif
@@ -112,13 +115,14 @@
 //  Curve
 .curve {
   position: absolute;
-  bottom: 111px;
+  bottom: 23px;
   left: 0;
   z-index: 100;
 
   @include responsive(mobile) {
-    width: 142%;
-    bottom: 43px;
+    width: 532px;
+    bottom: auto;
+    top: 196px;
     left: -158px;
     transform: scale(-1, 1);
   }

@@ -5,9 +5,17 @@
 
   @include responsive(mobile) {
     width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   &__slide {
+
+    @include responsive(mobile) {
+      margin-right: 24px;
+    }
     .course-card {
       margin: 0 auto;
 

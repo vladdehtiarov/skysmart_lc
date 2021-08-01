@@ -203,7 +203,11 @@
 
     @include responsive(mobile) {
       margin-top: 15px;
-      margin-left: -28px;
+      margin-left: -20px;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
     }
   }
 }

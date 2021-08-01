@@ -104,6 +104,7 @@
     @include responsive(mobile) {
       width: 343px;
       height: 384px;
+      margin: 0 auto;
       margin-top: 42px;
     }
 
