@@ -113,7 +113,7 @@
 
 //  Menu mobile
 .header__menu-mob {
-  transform: translateX(-100%);
+  transform: translateX(-150%);
   transition: all 0.2s ease-in-out;
   display: none;
   @include responsive(mobile) {
@@ -141,6 +141,7 @@
       color: #141819;
 
       img {
+        width: 44px;
         margin-right: 8px;
       }
     }
