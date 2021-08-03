@@ -1,0 +1,373 @@
+/*Comments page*/
+.comments-page {
+  .container {
+    padding: 0 8px;
+  }
+
+  .footer {
+    margin-top: 176px;
+
+    @include responsive(mobile) {
+      margin-top: 140px;
+    }
+  }
+
+  &-vector {
+    position: absolute;
+    top: -87px;
+    left: 221px;
+    z-index: 500;
+
+    @include responsive(mobile) {
+      top: 137px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-vector-2 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  .change-course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 60px;
+    margin: 0 auto;
+    background: #00AEFA;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+
+    @include responsive(mobile) {
+      width: 300px;
+      height: 54px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.05px;
+    }
+  }
+}
+
+.comments-section {
+  //padding-top: 82px;
+
+  .container {
+    padding-top: 82px;
+    position: relative;
+    overflow: hidden;
+
+    @include responsive(mobile) {
+      padding-top: 43px;
+      padding-bottom: 48px;
+    }
+  }
+
+  &__title {
+    width: 80%;
+
+    @include responsive(mobile) {
+      width: 100%;
+      max-width: 304px;
+    }
+
+    &_blue {
+      color: #00AEFA;
+    }
+  }
+}
+
+.all-comments-wrapper {
+  width: 100%;
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include responsive(mobile) {
+    margin-top: 12px
+  }
+}
+
+#list-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include responsive(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comment-item {
+    &:first-child {
+      @include responsive(mobile) {
+        .comment-item__title {
+          img {
+            margin-left: -5px;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      @include responsive(mobile) {
+        margin-top: 24px;
+        .comment-item__title {
+          img {
+            margin-left: -5px;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+    &:last-child {
+      @include responsive(mobile) {
+        padding-top: 10px;
+        margin-top: 27px;
+      }
+    }
+  }
+}
+
+#list-2 {
+  display: flex;
+  width: 760px;
+  margin-top: -159px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include responsive(mobile) {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comment-item {
+    margin-top: 0;
+  }
+
+  .comments-list {
+    &__left {
+
+      @include responsive(mobile) {
+        display: none;
+      }
+
+      .comment-item {
+        padding-top: 30px;
+        height: 676px;
+        background-color: #FF9E00;
+        border-radius: 32px;
+        position: relative;
+        z-index: 999;
+
+        &__title {
+          width: 312px;
+          font-size: 40px;
+          line-height: 44px;
+          letter-spacing: -0.6px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: #FFFFFF;
+        }
+
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    &__right {
+      margin-top: 15px;
+      z-index: 999;
+
+      @include responsive(mobile) {
+        margin-top: 13px;
+      }
+
+      .big-item {
+        margin-top: 24px;
+        width: 300px;
+        height: 481px;
+        padding-top: 32px;
+        background-color: #FF9E00;
+        border-radius: 24px;
+        position: relative;
+        overflow: hidden;
+        z-index: 999;
+
+        .comment-item__title {
+          width: 244px;
+          font-size: 32px;
+          line-height: 36px;
+          letter-spacing: -0.25px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: #FFFFFF;
+        }
+
+        img {
+          width: 300px;
+          position: absolute;
+          bottom: -64px;
+          left: 0;
+        }
+      }
+
+      .comment-item {
+
+        @include responsive(mobile) {
+          margin-top: 10px;
+        }
+
+        &:nth-child(1) {
+          @include responsive(mobile) {
+            padding-top: 10px;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-top: 31px;
+
+          @include responsive(mobile) {
+            margin-top: 24px;
+          }
+
+        }
+
+        &:nth-child(3) {
+          margin-top: 31px;
+
+          @include responsive(mobile) {
+            margin-top: 24px;
+            padding-top: 5px;
+          }
+
+          .comment-item__text {
+            @include responsive(mobile) {
+              width: 95%;
+            }
+          }
+
+        }
+
+        &:last-child{
+          margin-top: 31px;
+
+          @include responsive(mobile) {
+            margin-top: 24px;
+            padding-top: 10px;
+          }
+
+          .comment-item__text {
+            @include responsive(mobile) {
+              width: 95%;
+            }
+          }
+        }
+
+        &__text {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+#list-3 {
+  margin-top: -4px;
+  z-index: 999;
+
+  @include responsive(mobile) {
+    display: none;
+  }
+}
+
+.comment-item {
+  width: 360px;
+  padding-top: 15px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  border-radius: 18px;
+  background-color: #fff;
+  z-index: 999;
+
+  @include responsive(mobile) {
+    width: 300px;
+    padding-top: 16px;
+
+  }
+
+  &:first-child {
+    margin-top: 30px;
+
+  }
+
+  &:last-child {
+    margin-top: 22px;
+
+    @include responsive(mobile) {
+      margin-top: 24px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.64);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include responsive(mobile) {
+      line-height: 28px;
+    }
+
+    img {
+      margin-left: -7px;
+      margin-right: 4px;
+
+      @include responsive(mobile) {
+        margin-left: -10px;
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__text {
+    width: 304px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include responsive(mobile) {
+      margin-top: 10px;
+      width: 252px;
+      line-height: 22px;
+    }
+
+    &_blue {
+      color: #1797CC;
+    }
+  }
+}
+
