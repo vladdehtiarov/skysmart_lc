@@ -11,5 +11,9 @@
 
   .footer {
     margin-top: 171px;
+
+    @include responsive(mobile) {
+      margin-top: 138px;
+    }
   }
 }

@@ -22,7 +22,16 @@
   display: none;
 }
 
+.hide_d{
+  display: none;
+
+  @include responsive(mobile) {
+    display: inline-block;
+  }
+}
+
 .hide_m {
+  display: inline-block;
   @include responsive(mobile) {
     display: none;
   }
