@@ -1,0 +1,58 @@
+/*other modules*/
+.other-modules {
+  width: 100%;
+  margin-top: 112px;
+
+  @include responsive(mobile) {
+    margin-top: 63px;
+  }
+
+  // Header
+  &-header {
+    @include responsive(mobile) {
+      margin-left: 8px;
+    }
+  }
+
+  // wrapper
+  &__wrapper {
+    width: 100%;
+    margin-top: 32px;
+
+    @include responsive(mobile) {
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+
+  // List
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 8px;
+    margin: 0 auto;
+
+    @include responsive(mobile) {
+      width: 1105px;
+      padding-left: 16px;
+      justify-content: flex-start;
+    }
+
+    .course-card {
+      @include responsive(mobile) {
+        margin: 0 12px;
+      }
+
+      &:first-child {
+        @include responsive(mobile) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

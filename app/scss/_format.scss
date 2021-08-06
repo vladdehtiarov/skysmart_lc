@@ -1,0 +1,156 @@
+/*Format*/
+.format {
+  width: 100%;
+  margin-top: 106px;
+
+  @include responsive(mobile) {
+    margin-top: 58px;
+  }
+
+  // List
+  &__list {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @include responsive(mobile) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // Item
+    &-item {
+      width: 360px;
+      height: 593px;
+      margin-left: 40px;
+      padding: 32px 13px 20px 24px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      position: relative;
+
+      &:first-child {
+        margin-left: 0;
+        @include responsive(mobile) {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        .format__list-point {
+          @include responsive(mobile) {
+            margin-top: 20px;
+          }
+        }
+      }
+
+      @include responsive(mobile) {
+        width: 300px;
+        height: auto;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 27px 15px 104px 24px;
+      }
+    }
+
+    // Sticker
+    &-sticker {
+      position: absolute;
+      top: -29px;
+      left: 152px;
+    }
+
+    // Title
+    &-title {
+      margin-top: 8px;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: -0.15px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+
+      @include responsive(mobile) {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+      }
+
+      // Green
+      &_green {
+        display: block;
+        color: #7AC100;
+      }
+    }
+
+    // Points
+    &-points {
+      margin-top: 32px;
+    }
+
+    // Point
+    &-point {
+      width: 313px;
+      margin-top: 12px;
+      display: flex;
+      align-items: flex-start;
+
+      @include responsive(mobile) {
+        margin-top: 12px;
+        width: 260px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      // Text
+      &-text {
+        margin-left: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(mobile) {
+          font-size: 14px;
+          line-height: 20px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+        }
+      }
+    }
+
+    // Button
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 308px;
+      margin-top: 32px;
+      height: 56px;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: -0.1px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+      background: #00C1FF;
+      border-radius: 8px;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+
+      @include responsive(mobile) {
+        width: 252px;
+        height: 48px;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: -0.05px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        bottom: 23px;
+      }
+    }
+  }
+}

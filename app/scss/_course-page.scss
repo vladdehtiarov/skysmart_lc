@@ -1,0 +1,67 @@
+@import "about-course";
+@import "format";
+@import "program";
+@import "other-modules";
+@import "pluses";
+@import "liked";
+
+/*Course page*/
+.course-page {
+  background-color: #FFF2E0;
+
+  // Header
+  .header {
+    background-color: #FFF2E0;
+
+    &__menu-mob {
+      background-color: #FFF2E0;
+    }
+  }
+
+
+  // Footer
+  .footer {
+    @include responsive(mobile) {
+      margin-top: 90px;
+    }
+  }
+
+  // Section header
+  .section-header {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    &_blue {
+      color: #00C1FF;
+    }
+
+    @include responsive(mobile) {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.25px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+  }
+
+  // Filter item
+  .filter-item {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #F4F4F4;
+    border-radius: 8px;
+    font-size: 18px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.48);
+
+    &_now {
+      color: #FF4545;
+    }
+  }
+
+  .js-validate-error-label {
+    display: none;
+  }
+}

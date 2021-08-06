@@ -1,0 +1,6 @@
+/*Liked*/
+.liked {
+  @include responsive(mobile) {
+    margin-top: 47px;
+  }
+}

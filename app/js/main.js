@@ -52,4 +52,33 @@ if (allAgeBtn) {
     });
 }
 
+//Validate form
+let validateForm = function (element, options) {
+    new window.JustValidate(element, {
+        rules: options,
+        // Start if valid
+        submitHandler: function () {
+
+        }
+    });
+};
+
+validateForm('.pluses__form',
+    {
+        email: {required:true, email: true},
+        nameStudent: {required: true},
+        nameParent: {required: true},
+        phone: {required: true}
+    });
+
+// Phone mask
+
+let selector = document.querySelector('.input-phone');
+
+if (selector) {
+    let im = new Inputmask("+7(999) 999-9999");
+    im.mask(selector);
+}
+
+
 

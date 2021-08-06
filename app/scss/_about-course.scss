@@ -1,0 +1,227 @@
+/*About course*/
+.about-course {
+  margin-top: 134px;
+
+  @include responsive(mobile) {
+    margin-top: 87px;
+  }
+
+  // Back to smth btn
+  .back-to {
+    width: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 26px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  // Course name
+  .course-name {
+    margin-top: 35px;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include responsive(mobile) {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.25px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+  }
+
+  // Content
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // Left
+    &-left {
+      width: 100%;
+      margin-top: 10px;
+      max-width: 460px;
+
+      @include responsive(mobile) {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  // Filters
+  &__filters {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @include responsive(mobile) {
+      width: 300px;
+    }
+
+    // Item
+    &-item {
+      margin-left: 12px;
+      padding: 4px 10px;
+      font-size: 18px;
+      line-height: 24px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(0, 0, 0, 0.48);
+      background-color: #fff;
+      border-radius: 8px;
+
+      &:first-child,
+      &:nth-child(4) {
+        margin-left: 0;
+      }
+
+      &:last-child,
+      &:nth-child(4),
+      &:nth-child(5) {
+        margin-top: 12px;
+      }
+
+      &:first-child {
+        @include responsive(mobile) {
+          order: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        @include responsive(mobile) {
+          order: 1;
+        }
+      }
+
+      &:nth-child(3) {
+        @include responsive(mobile) {
+          order: 3;
+          margin-left: 0;
+          margin-top: 12px;
+        }
+      }
+
+      &:nth-child(4) {
+        @include responsive(mobile) {
+          order: 2;
+          margin-top: 0;
+          margin-left: 12px;
+        }
+      }
+
+      &:nth-child(5) {
+        @include responsive(mobile) {
+          order: 4;
+          margin-left: 0;
+        }
+      }
+
+      &:last-child {
+        color: #FF4545;
+
+        @include responsive(mobile) {
+          order: 5;
+        }
+      }
+    }
+  }
+
+  // Course description
+  .course-description {
+    width: 100%;
+    margin-top: 32px;
+
+    // Title
+    &__title {
+      width: 400px;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.1px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #000000;
+      opacity: 0.8;
+
+      @include responsive(mobile) {
+        width: 300px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.05px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+      }
+    }
+
+    // List
+    &__list {
+      margin-top: 32px;
+
+      @include responsive(mobile) {
+        margin-top: 30px;
+      }
+
+      // Item
+      &-item {
+        width: 100%;
+        margin-top: 12px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        // Icon
+        &-icon {
+          margin-top: 3px;
+          margin-left: 2px;
+
+          @include responsive(mobile) {
+            margin-top: 2px;
+            margin-left: 4px;
+          }
+        }
+
+        // Text
+        &-text {
+          width: 328px;
+          margin-left: 8px;
+          font-size: 16px;
+          line-height: 24px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+
+          @include responsive(mobile) {
+            width: 268px;
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 20px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+          }
+        }
+      }
+    }
+  }
+
+  //  Course image
+  .course-image {
+    margin-right: -16px;
+
+    @include responsive(mobile) {
+      margin-right: -8px;
+      margin-top: 16px;
+    }
+  }
+}
