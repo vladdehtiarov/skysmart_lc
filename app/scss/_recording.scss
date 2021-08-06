@@ -1,0 +1,151 @@
+/*Recording*/
+.recording {
+  width: 100%;
+  margin-top: 92px;
+
+  @include responsive(mobile) {
+    margin-top: 83px;
+    margin-bottom: -15px;
+  }
+
+  // Title
+  &__title {
+    width: 610px;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include responsive(mobile) {
+      width: 100%;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    // Blue
+    &_blue {
+      color: #00C1FF;
+    }
+  }
+
+  // Button
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 309px;
+    height: 56px;
+    margin-top: 32px;
+    background: #00C1FF;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+
+    @include responsive(mobile) {
+      width: 252px;
+      height: 48px;
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+  }
+
+  // List
+  &__list {
+    // Item
+    &-item {
+      margin-top: 12px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      // Text
+      &-text {
+        width: 275px;
+        margin-left: 6px;
+        font-size: 16px;
+        line-height: 140%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(mobile) {
+          width: 100%;
+          margin-left: 3px;
+        }
+
+      }
+    }
+  }
+
+  //Inner
+  &__inner {
+    width: 100%;
+    //height: 346px;
+    padding: 24px;
+    padding-bottom: 42px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    @include responsive(mobile) {
+      width: 300px;
+      height: 470px;
+      margin: 0 auto;
+      padding-bottom: 32px;
+      padding-right: 12px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // Image
+    &-img {
+      position: absolute;
+      top: -34px;
+      left: 539px;
+
+      @include responsive(mobile) {
+        top: -64px;
+        left: 142px;
+      }
+    }
+
+    // Left
+    &-left {
+      width: 736px;
+
+      @include responsive(mobile) {
+        width: 100%;
+      }
+    }
+
+    // Right
+    &-right {
+      width: 324px;
+      margin-left: 36px;
+      margin-top: 14px;
+
+      @include responsive(mobile) {
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 0;
+      }
+    }
+  }
+}
