@@ -1,0 +1,63 @@
+.buy-after {
+  .buy-btn {
+    width: 359px;
+    @include responsive(790px) {
+      width: 343px;
+    }
+  }
+  .buy-content__inner {
+    @include responsive(790px) {
+      padding-top: 30px;
+    }
+  }
+}
+
+.buy-content__info {
+  width: 336px;
+  margin-top: -6px;
+
+  @include responsive(790px) {
+    width: 265px;
+  }
+
+  // Header
+  &-header {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.1px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #271907;
+
+    @include responsive(790px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  // Text
+  &-text {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #271907;
+
+    @include responsive(790px) {
+      margin-top: 64px;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    p:last-child {
+      margin-top: 16px;
+
+      @include responsive(790px) {
+        margin-top: 24px;
+      }
+    }
+  }
+}
