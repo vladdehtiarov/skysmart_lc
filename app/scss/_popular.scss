@@ -3,12 +3,12 @@
   width: 100%;
   margin-top: 96px;
 
-  @include responsive(mobile) {
+  @include responsive(648px) {
     margin-top: 48px;
   }
 
   .course-card {
-    @include responsive(mobile) {
+    @include responsive(648px) {
       width: 334px;
       height: 440px;
       margin-top: 16px;
@@ -16,13 +16,13 @@
     }
 
     &__course-name {
-      @include responsive(mobile) {
+      @include responsive(648px) {
         margin-top: 11px;
       }
     }
 
     //&__course-info {
-    //  @include responsive(mobile) {
+    //  @include responsive(648px) {
     //    position: absolute;
     //    bottom: 92px;
     //    left: 11px;
@@ -40,7 +40,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @include responsive(mobile) {
+    @include responsive(1090px) {
+      justify-content: center;
+    }
+
+    .course-card {
+      @include responsive(1090px) {
+        margin: 0 8px;
+
+        &:last-child {
+          margin-top: 16px;
+        }
+      }
+
+      @include responsive(834px) {
+        &:nth-child(2) {
+          margin-top: 16px;
+        }
+      }
+
+      @include responsive(648px) {
+        margin-top: 16px;
+      }
+    }
+
+    @include responsive(648px) {
       margin-top: 25px;
       flex-direction: column;
       align-items: center;
@@ -55,7 +79,7 @@
       letter-spacing: -0.6px;
       font-feature-settings: 'pnum' on, 'lnum' on;
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         width: 307px;
         font-size: 32px;
         line-height: 36px;
@@ -79,7 +103,7 @@
       border-radius: 12px;
       position: relative;
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         width: 343px;
         height: 438px;
         background: #BCEC30;
@@ -92,7 +116,7 @@
       display: flex;
       justify-content: space-between;
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         width: 216px;
         flex-wrap: wrap;
       }
@@ -107,7 +131,7 @@
         background: rgba(255, 255, 255, 0.64);
         border-radius: 8px;
 
-        @include responsive(mobile) {
+        @include responsive(648px) {
           font-size: 14px;
           line-height: 18px;
           letter-spacing: 0.1px;
@@ -116,7 +140,7 @@
         }
 
         &:last-child {
-          @include responsive(mobile) {
+          @include responsive(648px) {
             margin-top: 8px;
           }
         }
@@ -132,7 +156,7 @@
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: rgba(255, 255, 255, 0.8);
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         display: inline-block;
         margin-top: 122px;
         padding: 4px 10px;
@@ -153,7 +177,7 @@
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: rgba(255, 255, 255, 0.8);
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         display: none;
       }
     }

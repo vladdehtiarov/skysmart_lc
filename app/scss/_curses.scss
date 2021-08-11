@@ -121,7 +121,7 @@
     margin-left: 51px;
     margin-top: -13px;
 
-    @include responsive(mobile) {
+    @include responsive(648px) {
       margin-top: -8px;
       margin-left: 0;
     }
@@ -137,7 +137,7 @@
       justify-content: flex-start;
       margin-left: 25px;
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         width: 335px;
         margin-left: 0;
       }
@@ -147,7 +147,7 @@
       margin-right: 12px;
       margin-top: 12px;
 
-      @include responsive(mobile) {
+      @include responsive(648px) {
         margin-right: 8px;
         margin-top: 8px;
       }

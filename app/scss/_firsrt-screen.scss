@@ -5,9 +5,15 @@
   padding-top: 48px;
   background: linear-gradient(180deg, rgba(255, 247, 199, 0) 0%, #D7F9FF 60.82%);
 
-  @include responsive(mobile) {
+  @include responsive(1080px) {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  @include responsive(648px) {
     height: 614px;
     overflow: hidden;
+    //padding-bottom: 0;
   }
 
   .container {
@@ -19,11 +25,14 @@
     display: flex;
     justify-content: space-between;
 
+    @include responsive(1080px) {
+      margin-top: 70px;
+    }
 
 
-    @include responsive(mobile) {
+    @include responsive(648px) {
       flex-direction: column;
-
+      margin-top: 0;
     }
   }
 
@@ -31,8 +40,17 @@
   &__title {
     width: 891px;
 
-    @include responsive(mobile) {
+    @include responsive(1080px) {
+      width: 95vw;
+      margin-bottom: 50px;
+    }
+
+    @include responsive(648px) {
       width: 312px;
+      margin-bottom: 0;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.25px;
     }
 
     &-blue {
@@ -50,8 +68,14 @@
     letter-spacing: -0.1px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     position: relative;
+    z-index: 1500;
 
-    @include responsive(mobile) {
+
+    @include responsive(1080px) {
+      margin: 0 auto;
+    }
+
+    @include responsive(648px) {
       width: 268px;
       margin-top: 84px;
       margin-left: -3px;
@@ -68,7 +92,7 @@
     left: 141px;
     z-index: 999;
 
-    @include responsive(mobile) {
+    @include responsive(648px) {
       width: 108px;
       top: -43px;
       left: 164px;
@@ -84,7 +108,12 @@
     position: relative;
     z-index: 999;
 
-    @include responsive(mobile) {
+    @include responsive(1080px) {
+      width: 60vw;
+      height: 40vw;
+    }
+
+    @include responsive(648px) {
       width: 343px;
       height: 193px;
       margin: 0 auto;
@@ -101,7 +130,12 @@
       left: 55%;
       transform: translate(-50%, -50%);
 
-      @include responsive(mobile) {
+      @include responsive(1080px) {
+        width: 60vw;
+        height: 40vw;
+      }
+
+      @include responsive(648px) {
         width: 343px;
         height: 193px;
         left: 50%;
@@ -119,7 +153,12 @@
   left: 0;
   z-index: 100;
 
-  @include responsive(mobile) {
+  @include responsive(1080px) {
+    display: none;
+  }
+
+  @include responsive(648px) {
+    display: block;
     width: 532px;
     bottom: auto;
     top: 196px;

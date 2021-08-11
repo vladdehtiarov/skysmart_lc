@@ -1,6 +1,6 @@
 /*Custom radiobutton*/
 .custom-radiobutton {
-  @include responsive(mobile) {
+  @include responsive(648px) {
     &:nth-child(1) {
       order: 0;
     }
@@ -48,7 +48,7 @@
     color: #000000;
     cursor: pointer;
 
-    @include responsive(mobile) {
+    @include responsive(648px) {
       padding: 6px 12px;
       font-size: 16px;
       line-height: 24px;

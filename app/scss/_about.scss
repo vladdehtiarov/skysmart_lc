@@ -7,7 +7,13 @@
   position: relative;
   overflow: hidden;
 
-  @include responsive(mobile) {
+  @include responsive(1080px) {
+    margin-top: 50px;
+    padding-top: 56px;
+    height: auto;
+  }
+
+  @include responsive(648px) {
     margin-top: 50px;
     padding-top: 56px;
     height: 1068px;
@@ -20,8 +26,14 @@
     left: 42%;
     bottom: 5px;
 
-    @include responsive(mobile) {
+    @include responsive(1080px) {
+      height: 310px;
+      left: 60%;
+    }
+
+    @include responsive(648px) {
       height: 232px;
+      right: auto;
       left: 16px;
       bottom: 0;
     }
@@ -38,7 +50,19 @@
     left: 46%;
     top: 468px;
 
-    @include responsive(mobile) {
+    @include responsive(1080px) {
+      width: 200px;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.25px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #000000;
+      left: 60%;
+      top: 224px;
+    }
+
+    @include responsive(648px) {
+
       width: 100%;
       font-size: 32px;
       line-height: 36px;
@@ -61,7 +85,15 @@
     left: 46%;
     top: 623px;
 
-    @include responsive(mobile) {
+    @include responsive(1080px) {
+      width: 178px;
+      font-size: 14px;
+      line-height: 20px;
+      left: 62%;
+      top: 375px;
+    }
+
+    @include responsive(648px) {
       width: 178px;
       font-size: 14px;
       line-height: 20px;
@@ -73,7 +105,12 @@
       margin-top: 12px;
       width: 340px;
 
-      @include responsive(mobile) {
+      @include responsive(1080px) {
+        margin-top: 17px;
+        width: 178px;
+      }
+
+      @include responsive(648px) {
         margin-top: 17px;
         width: 178px;
       }
@@ -83,7 +120,12 @@
   // Title
   &__title {
     letter-spacing: -1.1px;
-    @include responsive(mobile) {
+
+    @include responsive(1080px) {
+      width: 500px;
+    }
+
+    @include responsive(648px) {
       width: 100%;
     }
 
@@ -101,7 +143,13 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include responsive(mobile) {
+    @include responsive(1080px) {
+      width: 343px;
+      height: 384px;
+      margin-top: 42px;
+    }
+
+    @include responsive(648px) {
       width: 343px;
       height: 384px;
       margin: 0 auto;
@@ -118,7 +166,12 @@
       &-img {
         margin-right: 16px;
 
-        @include responsive(mobile) {
+        @include responsive(1080px) {
+          width: 52px;
+          margin-right: 12px;
+        }
+
+        @include responsive(648px) {
           width: 52px;
           margin-right: 12px;
         }
@@ -132,7 +185,13 @@
         letter-spacing: -0.1px;
         font-feature-settings: 'pnum' on, 'lnum' on;
 
-        @include responsive(mobile) {
+        @include responsive(1080px) {
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: -0.05px;
+        }
+
+        @include responsive(648px) {
           font-size: 20px;
           line-height: 26px;
           letter-spacing: -0.05px;
@@ -153,7 +212,14 @@
       font-feature-settings: 'pnum' on, 'lnum' on;
       color: #FFFFFF;
 
-      @include responsive(mobile) {
+      @include responsive(1080px) {
+        padding: 15px 102px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.05px;
+      }
+
+      @include responsive(648px) {
         padding: 15px 102px;
         font-size: 18px;
         line-height: 24px;
