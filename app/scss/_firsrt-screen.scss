@@ -11,9 +11,9 @@
   }
 
   @include responsive(648px) {
-    height: 614px;
+    height: auto;
     overflow: hidden;
-    //padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .container {
@@ -46,7 +46,7 @@
     }
 
     @include responsive(648px) {
-      width: 312px;
+      width: 348px;
       margin-bottom: 0;
       font-size: 32px;
       line-height: 36px;
@@ -161,7 +161,7 @@
     display: block;
     width: 532px;
     bottom: auto;
-    top: 196px;
+    top: 238px;
     left: -158px;
     transform: scale(-1, 1);
   }
